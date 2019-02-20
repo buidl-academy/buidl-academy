@@ -1,0 +1,106 @@
+.app {
+  height: 100%;
+  position: relative;
+
+  &:after {
+    content: "";
+    opacity: 0.3;
+    background-image: url(./erc20.png);
+    background-position: left;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &:before {
+    content: "";
+    opacity: 0.95;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+  }
+
+  .actions {
+    position: absolute;
+    margin: 0 20px;
+    font-size: 20px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+
+    > a {
+      text-decoration: none;
+      margin: 20px;
+      color: #fcfcfc;
+      padding: 10px;
+      background-color: darken(#ef1560, 7);
+      transition: color .5s, background-color .5s;
+      border-radius: 10px;
+
+      &:hover {
+        cursor: pointer;
+        color: black;
+        background-color: #ef1560;
+      }
+    }
+  }
+
+  svg.diagonal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    fill: #ef1560;
+    z-index: 1;
+  }
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 65px;
+    padding: 10px;
+    color: #fcfcfc;
+    border-radius: 10px;
+    font-family: 'Permanent Marker', cursive;
+    z-index: 2;
+  }
+
+  .main-text {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Righteous', cursive;
+      .buidl {
+        font-size: 100px;
+        font-family: 'Permanent Marker', cursive;
+      }
+      .academy {
+        font-size: 75px;
+      }
+    }
+
+    .description {
+      font-family: 'Righteous', cursive;
+      padding: 25px;
+      font-size: 25px;
+    }
+  }
+}
