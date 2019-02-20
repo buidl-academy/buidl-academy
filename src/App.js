@@ -8,14 +8,14 @@ class App extends Component {
         <div className="main-text">
           <div className="title">
             <div className="buidl">
-              {'{} BUIDL'}
+              {'{BUIDL}'}
             </div>
             <div className="academy">
               Academy
             </div>
           </div>
           <div className="description">
-            Open-Source Ethereum Coding School
+            Open-Source Ethereum Code School
           </div>
         </div>
         <div className="marker actions">
