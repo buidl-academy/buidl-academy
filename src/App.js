@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import './App.scss';
+import {
+  SLACK_URL,
+  TWITTER_URL,
+  FORUM_URL,
+} from './config';
+import SVG from './SVG';
 
 class App extends Component {
   render() {
@@ -19,10 +25,21 @@ class App extends Component {
           </div>
         </div>
         <div className="marker actions">
-          <a target="_blank" href="https://forum.buidl.academy"> Forum </a>
+          <a target="_blank" href={FORUM_URL} rel="noopener noreferrer">
+            <SVG name="discourse"/>
+            Forum
+          </a>
+          <a target="_blank" href={SLACK_URL} rel="noopener noreferrer">
+            <SVG name="slack"/>
+            Chat
+          </a>
+          <a target="_blank" href={TWITTER_URL} rel="noopener noreferrer">
+            <SVG name="twitter"/>
+            Social
+          </a>
         </div>
         <svg className="diagonal" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0,80 0,100 100,100 100,95">      
+          <polygon points="0,80 0,100 100,100 100,95">
           </polygon>
         </svg>
       </div>

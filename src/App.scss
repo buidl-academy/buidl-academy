@@ -40,15 +40,28 @@
       text-decoration: none;
       margin: 20px;
       color: #fcfcfc;
-      padding: 10px;
+      padding: 10px 10px 5px 10px;
       background-color: darken(#ef1560, 7);
       transition: color .5s, background-color .5s;
       border-radius: 10px;
+      display: flex;
+
+      svg {
+        height: 25px;
+        fill: white;
+        width: auto;
+        margin-right: 8px;
+        transition: fill .5s;
+      }
 
       &:hover {
         cursor: pointer;
         color: black;
         background-color: #ef1560;
+
+        svg {
+          fill: black;
+        }
       }
     }
   }
