@@ -27,15 +27,15 @@ class App extends Component {
         <div className="marker actions">
           <a target="_blank" href={FORUM_URL} rel="noopener noreferrer">
             <SVG name="discourse"/>
-            Forum
+            <span>Forum</span>
           </a>
           <a target="_blank" href={SLACK_URL} rel="noopener noreferrer">
             <SVG name="slack"/>
-            Chat
+            <span>Chat</span>
           </a>
           <a target="_blank" href={TWITTER_URL} rel="noopener noreferrer">
             <SVG name="twitter"/>
-            Social
+            <span>Social</span>
           </a>
         </div>
         <svg className="diagonal" viewBox="0 0 100 100" preserveAspectRatio="none">

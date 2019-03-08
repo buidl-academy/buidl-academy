@@ -1,6 +1,13 @@
+$breakpoint: 600px;
+
 .app {
   height: 100%;
   position: relative;
+  font-size: 20px;
+
+  @media (max-width: $breakpoint) {
+    font-size: 14px;
+  }
 
   &:after {
     content: "";
@@ -30,7 +37,6 @@
   .actions {
     position: absolute;
     margin: 0 20px;
-    font-size: 20px;
     bottom: 0;
     left: 0;
     z-index: 2;
@@ -52,6 +58,15 @@
         width: auto;
         margin-right: 8px;
         transition: fill .5s;
+      }
+
+      @media (max-width: $breakpoint) {
+        svg {
+          margin: 0;
+        }
+        span {
+          display: none;
+        }
       }
 
       &:hover {
@@ -78,7 +93,7 @@
     position: absolute;
     top: 30px;
     left: 40px;
-    font-size: 65px;
+    font-size: 3.5em;
     padding: 10px;
     color: #fcfcfc;
     border-radius: 10px;
@@ -102,18 +117,18 @@
       align-items: center;
       font-family: 'Righteous', cursive;
       .buidl {
-        font-size: 100px;
+        font-size: 5em;
         font-family: 'Permanent Marker', cursive;
       }
       .academy {
-        font-size: 75px;
+        font-size: 3.75em;
       }
     }
 
     .description {
       font-family: 'Righteous', cursive;
       padding: 25px;
-      font-size: 25px;
+      font-size: 1.25em;
     }
   }
 }
